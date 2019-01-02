@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1" >
+ <meta name="description" content="Web Tutorials">
+ <meta name="keywords" content="鬥陣特攻,鬥陣,overwatch">
+ <meta name="author" content="東大軒哥">
+ <meta http-equiv="refresh" content="3600">
+<title>overwatch</title>
+<a id="first"></a>
+</head>	
+<style>
+body{background-color: #d0d0d0 }
+.dropdown {position: relative; display: inline-block;}
+.dropbtn {background-color: #3498DB; color: white; padding: 16px; font-size: 16px; border: none;min-width: 160px;}
+.dropdown-content {display: none; position: absolute; background-color: #f1f1f1; min-width: 160px; z-index: 1;}
+.dropdown-content a{color: black; padding: 12px 16px; text-decoration: none; display: block;}
+.show {display: block;}
+#a {
+position:relative;height:800px;width:100%;padding:1em;background-image:url("https://i.ytimg.com/vi/9ybyHLfZMVE/maxresdefault.jpg") ;
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: center;}
+#b {float:left;position:fixed; top:1.5%;}
+#d {height:2800px;width: 60%;margin-left: 18%}
+@media screen and (max-width: 900px){#a{font-size:60%;height:300px;background-size:100%auto; }}
+@media screen and (max-width: 900px){#b{font-size:28px;margin-top: 1.5%; width: 15%}}
+@media screen and (max-width: 900px){#d{font-size:75%;width:60%}}
+@media screen and (max-width: 900px){.dropbtn{ padding: 16px; font-size: 16px; border: none;min-width: 80%;}}
+@media screen and (max-width: 900px){.dropdown-content{ font-size: 16px; border: none;min-width:80%;}}
+h2{font-size:30px;text-shadow: 2px 2px 5px #FF0000}
+p{font-size:20px;line-height: 1.8;text-shadow: 2px 2px 5px #0099ff;}
+</style>
+<div id="a"><h1 style="font-size:600%;font-family:DFKai-sb;color:red;text-align:center;"></h1></div>
+<body>
+<div class="dropdown" id="b">
+<button onclick="myFunction()" class="dropbtn">目錄</button>
+<div id="myDropdown" class="dropdown-content"><a href="#簡介">簡介</a><a href="#英雄">英雄</a><a href="#玩法">玩法</a><a href="#地圖">地圖</a></div>
+</div>
+<script>
+function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {openDropdown.classList.remove('show');}}}}
+</script>
+<div id="d">
+<p><video width="100%" autoplay loop>
+<source src="overwatch.mp4" type="video/mp4">
+</video></p>
+<h2 id="簡介">簡介</h2>
+<P>《鬥陣特攻》是一款由暴雪娛樂開發並發行的多人第一人稱射擊遊戲,於2016年5月24日在Microsoft Windows、PlayStation 4和Xbox One平台發行。
+《鬥陣特攻》把玩家分為兩支隊伍，每隊6人、4人、3人、1人或5人。不同模式有不同的隊伍人數。玩家可從幾個預定英雄人物中選擇，每個英雄有自己獨特屬性和技能；這些英雄分為三類：輸出型、肉盾型和輔助型。隊員合力保護並捍衛地圖上的控制點，或在有限時間內護送載具到達指定地點。</P>
+<h2 id="英雄">英雄</h2>
+<p style="font-size:25px ">攻擊型</p>
+<form style="display: none;" id="demo">
+<img src="https://d1u1mce87gyfbn.cloudfront.net/media/wallpaper/tracer-wallpaper-wide.jpg" height="400">
+<p>脈衝手槍</p>
+<P style="font-size:15px ">閃光以雙手的手槍快速連射。</P>
+<p>閃現</p>
+<P style="font-size:15px ">閃光快速穿過她面前的空間，在數碼之外現身。閃現技能的使用次數最高可以累積到三次，每隔幾秒可以累積一次。</P>
+<p>回溯</p>
+<P style="font-size:15px ">閃光回溯時間，她的生命值、彈藥量，和地圖上的所在位置會回到幾秒之前的狀態。
+<p>脈衝炸彈</p>
+<P style="font-size:15px ">閃光丟出大型炸彈，會黏附在任何物體表面或是不幸的敵人身上。在些許延遲後炸彈就會爆炸，對範圍內的所有敵人造成大量傷害。</P>
+</form>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">閃光</button>
+
+
+<h2 id="玩法">玩法</h2>
+<h2 id="地圖">地圖</h2>
+</form>
+</div>
+</body>	
