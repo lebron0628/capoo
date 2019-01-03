@@ -5,7 +5,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1" >
  <meta name="description" content="Web Tutorials">
- <meta name="keywords" content="鬥陣特攻,鬥陣,overwatch">
+ <meta name="keywords" content="鬥陣特攻,鬥陣,overwatch,ow">
  <meta name="author" content="東大軒哥">
  <meta http-equiv="refresh" content="3600">
 <title>overwatch</title>
@@ -58,7 +58,9 @@ if (openDropdown.classList.contains('show')) {openDropdown.classList.remove('sho
 《鬥陣特攻》把玩家分為兩支隊伍，每隊6人、4人、3人、1人或5人。不同模式有不同的隊伍人數。玩家可從幾個預定英雄人物中選擇，每個英雄有自己獨特屬性和技能；這些英雄分為三類：輸出型、肉盾型和輔助型。隊員合力保護並捍衛地圖上的控制點，或在有限時間內護送載具到達指定地點。</P>
 <h2 id="英雄">英雄</h2>
 <p style="font-size:25px ">攻擊型</p>
-<form style="display: none;" id="demo">
+<button onclick="display1();">閃光</button>
+<button onclick="display2();">士兵76</button>
+<div id="content1" style="display:none" >
 <img src="https://d1u1mce87gyfbn.cloudfront.net/media/wallpaper/tracer-wallpaper-wide.jpg" height="400">
 <p>脈衝手槍</p>
 <P style="font-size:15px ">閃光以雙手的手槍快速連射。</P>
@@ -67,13 +69,125 @@ if (openDropdown.classList.contains('show')) {openDropdown.classList.remove('sho
 <p>回溯</p>
 <P style="font-size:15px ">閃光回溯時間，她的生命值、彈藥量，和地圖上的所在位置會回到幾秒之前的狀態。
 <p>脈衝炸彈</p>
-<P style="font-size:15px ">閃光丟出大型炸彈，會黏附在任何物體表面或是不幸的敵人身上。在些許延遲後炸彈就會爆炸，對範圍內的所有敵人造成大量傷害。</P>
-</form>
-<button type="button" onclick="document.getElementById('demo').style.display='block'">閃光</button>
-
-
+<P style="font-size:15px ">閃光丟出大型炸彈，會黏附在任何物體表面或是不幸的敵人身上。在些許延遲後炸彈就會爆炸，對範圍內的所有敵人造成大量傷害。</P></div>
+<div id="content2" style="display:none">
+<img src="https://d1u1mce87gyfbn.cloudfront.net/media/artwork/soldier-76-concept.jpg" width ="400">
+<p>重型脈衝步槍</p>
+<P style="font-size:15px ">就算是在全自動模式下火力全開，士兵76手中的步槍射擊穩定性依然很高。</P>
+<p>旋風火箭</p>
+<P style="font-size:15px ">從士兵76手中的脈衝步槍一次射出數枚小型火箭，火箭前進方式呈現螺旋狀，猶如旋風一般。火箭爆炸時會對小範圍內的敵人造成傷害。</P>
+<p>衝刺</p>
+<P style="font-size:15px ">士兵76能夠加速朝前方衝刺，藉此閃避槍林彈雨，或是返回戰場。如果他採取向前衝鋒以外的任何行動，會終止衝刺的加速效果。</P>
+<p>生化力場</p>
+<P style="font-size:15px ">士兵76在地上放置生化力場放射器。放射器散發出的能量會為76以及範圍內所有戰友徐徐恢復生命值。</P>
+<p>戰術鎖定</p>
+<P style="font-size:15px ">士兵76臉上的精確瞄準護目鏡能夠將攻擊目標「鎖定」在最接近準星的敵人身上。如果敵人離開士兵76的視線，目標會快速切換到下一名敵人身上。</P></div>
+<p style="font-size:25px ">防禦型</p>
+<button onclick="display3();">D.VA</button>
+<button onclick="display4();">歐瑞莎</button>
+<div id="content3" style="display:none">
+<img src="https://img.4gamers.com.tw/ckfinder/images/Why%20Lee/News/b241c265171ff0854591ba34b4cf1709.jpg" width ="400">
+<p>熱核砲</p>
+<P style="font-size:15px ">D.Va的機甲配有兩管短程旋轉式加農砲，不需重新裝填彈藥即可連續射出高傷害彈幕，但攻擊時會減緩D.Va的移動速度。</P>
+<p>光線槍</p>
+<P style="font-size:15px ">D.Va配有中程自動手槍，因此在脫離機甲之後，仍能繼續戰鬥。</P>
+<p>噴射推進</p>
+<P style="font-size:15px ">D.Va啟動機甲的推進器，產生動能向前飛行。她可以改變前進方向，或是藉由高速前進來撞倒敵人。</P>
+<p>防護力場</p>
+<P style="font-size:15px ">D.Va可短暫維持面向前方的標定陣列系統；啟動時可阻擋來自前方的遠程攻擊。</P>
+<p>火箭匣艙</p>
+<P style="font-size:15px ">D.Va 發射數枚火箭</P>
+<p>自爆</p>
+<P style="font-size:15px ">D.Va從機甲彈射出去，並且引爆反應爐，對附近的敵人造成莫大傷害。</P>
+<p>空投機甲</p>
+<P style="font-size:15px ">D.Va能在戰鬥機甲被摧毀後，呼叫一台新的機甲重返戰局。</P></div>
+<div id="content4" style="display:none">
+<img src="https://d1u1mce87gyfbn.cloudfront.net/media/artwork/orisa-concept.jpg" width ="400">
+<p>熱核砲</p>
+<P style="font-size:15px ">歐瑞莎的全自動射擊砲可造成持續傷害，但是使用時會降低她的移動速度。</P>
+<p>強化防禦</p>
+<P style="font-size:15px ">歐瑞莎暫時降低所受到的傷害，並且對控場效果免疫。</P>
+<p>不准動！</p>
+<P style="font-size:15px ">歐瑞莎可以施放引力彈，引爆時降低附近敵人的移動速度，並將他們拉向爆炸中心點。</P>
+<p>防護屏障</p>
+<P style="font-size:15px ">歐瑞莎設置防護屏障，可以幫她和隊友擋下敵方砲火。</P>
+<p>增壓強化裝置</p>
+<P style="font-size:15px ">歐瑞莎啟動增壓強化裝置來強化視線範圍內隊友造成的傷害。</P>
+</div>
+<p style="font-size:25px ">輔助型</p>
+<button onclick="display5();">慈悲</button>
+<button onclick="display6();">碧姬</button>
+<div id="content5" style="display:none">
+<img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2018/05/09/99/4719392.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050" height="400">
+<p>天使之杖</p>
+<P style="font-size:15px ">慈悲可以發射兩種能附著在友軍身上的光束。在維持光束連結的情形下，可以為友軍恢復生命值，或是提高友軍造成的傷害。</P>
+<p>天使光槍</p>
+<P style="font-size:15px ">慈悲可以用注射槍進行短距離射擊。</P>
+<p>守護天使</p>
+<P style="font-size:15px ">慈悲可以在關鍵時刻飛向指定的隊友，快速抵達對方身邊進行支援。</P>
+<p>復活</p>
+<P style="font-size:15px ">慈悲可以讓附近死亡的友軍以生命值全滿的狀態復活，繼續戰鬥。</P>
+<p>天使緩降</p>
+<P style="font-size:15px ">慈悲的女武神急救服可以產生推進力，減緩她從高處墜落的速度。</P>
+<p>女武神</p>
+<P style="font-size:15px ">獲得飛行能力，同時強化慈悲的自身技能。</P>
+</div>
+<div id="content6" style="display:none">
+<img src="https://d1u1mce87gyfbn.cloudfront.net/media/screenshot/brigitte-screenshot-001.jpg" height="400">
+<p>火箭連枷</p>
+<P style="font-size:15px ">碧姬的近戰武器攻擊距離較遠，能一次擊中多名敵人。</P>
+<p>修復包</p>
+<P style="font-size:15px ">碧姬丟出能恢復一名隊友生命值的修復包；若隊友的生命值全滿時，超出的治療量會轉為裝甲值。</P>
+<p>懲擊</p>
+<P style="font-size:15px ">碧姬能向遠處甩出連枷，造成傷害並且擊退附近的敵人。</P>
+<p>屏障防盾</p>
+<P style="font-size:15px ">碧姬可在前方產生能量屏障來吸收固定傷害。</P>
+<p>持盾衝鋒</p>
+<P style="font-size:15px ">啟動屏障防盾時，碧姬可以向前衝鋒並擊昏敵人。</P>
+<p>全軍集結</p>
+<P style="font-size:15px ">碧姬的移動速度提高，並提供附近隊友裝甲。裝甲會持續直到耗損完畢為止。</P>
+</div>
 <h2 id="玩法">玩法</h2>
 <h2 id="地圖">地圖</h2>
-</form>
+</div>
+<script>
+function display1(){
+var x = document.getElementById("content1");
+var y = document.getElementById("content2");
+if (x.style.display === "none") {x.style.display = "block";} 
+else {x.style.display = "none";}
+y.style.display ="none";}
+function display2(){
+var x = document.getElementById("content1");
+var y = document.getElementById("content2");
+x.style.display = "none";
+if (y.style.display === "none") {y.style.display = "block";} 
+else {y.style.display = "none";}}
+function display3(){
+var a = document.getElementById("content3");
+var b = document.getElementById("content4");
+if (a.style.display === "none") {a.style.display = "block";} 
+else {a.style.display = "none";}
+b.style.display ="none";}
+function display4(){
+var a = document.getElementById("content3");
+var b = document.getElementById("content4");
+a.style.display = "none";
+if (b.style.display === "none") {b.style.display = "block";} 
+else {b.style.display = "none";}}
+function display5(){
+var c = document.getElementById("content5");
+var d = document.getElementById("content6");
+if (c.style.display === "none") {c.style.display = "block";} 
+else {c.style.display = "none";}
+d.style.display ="none";}
+function display6(){
+var c = document.getElementById("content5");
+var d = document.getElementById("content6");
+c.style.display = "none";
+if (d.style.display === "none") {d.style.display = "block";} 
+else {d.style.display = "none";}}
+
+</script>
 </div>
 </body>	
