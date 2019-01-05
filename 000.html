@@ -24,7 +24,7 @@ background-repeat: no-repeat;
 background-size: 100% auto;
 background-position: center;}
 #b {float:left;position:fixed; top:1.5%;}
-#d {height:2800px;width: 60%;margin-left: 18%}
+#d {height:2800px;width: 60%;margin-left: 20%}
 @media screen and (max-width: 900px){#a{font-size:60%;height:300px;background-size:100%auto; }}
 @media screen and (max-width: 900px){#b{font-size:28px;margin-top: 1.5%; width: 15%}}
 @media screen and (max-width: 900px){#d{font-size:75%;width:60%}}
@@ -50,10 +50,13 @@ var openDropdown = dropdowns[i];
 if (openDropdown.classList.contains('show')) {openDropdown.classList.remove('show');}}}}
 </script>
 <div id="d">
-<p><video width="100%" autoplay loop>
-<source src="overwatch.mp4" type="video/mp4">
-</video></p>
-<h2 id="簡介">簡介</h2>
+<br>
+<div style="text-align:center;">
+<h style="font-size:80px;color:#f9f900" >歡迎來到《鬥陣特攻》</h></div>
+<br>
+<br>
+<iframe width="840" height="472.5" src="https://www.youtube.com/embed/gzAWpIlrojs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>簡介</h2>
 <P>《鬥陣特攻》是一款由暴雪娛樂開發並發行的多人第一人稱射擊遊戲,於2016年5月24日在Microsoft Windows、PlayStation 4和Xbox One平台發行。
 《鬥陣特攻》把玩家分為兩支隊伍，每隊6人、4人、3人、1人或5人。不同模式有不同的隊伍人數。玩家可從幾個預定英雄人物中選擇，每個英雄有自己獨特屬性和技能；這些英雄分為三類：輸出型、肉盾型和輔助型。隊員合力保護並捍衛地圖上的控制點，或在有限時間內護送載具到達指定地點。</P>
 <h2 id="英雄">英雄</h2>
@@ -148,7 +151,39 @@ if (openDropdown.classList.contains('show')) {openDropdown.classList.remove('sho
 <P style="font-size:15px ">碧姬的移動速度提高，並提供附近隊友裝甲。裝甲會持續直到耗損完畢為止。</P>
 </div>
 <h2 id="玩法">玩法</h2>
+<p>護送</p>
+<P style="font-size:15px ">攻擊方必須將指定目標運送到指定地點；而防守方必須阻止攻擊方，直到時間結束。</P>
+<p>控制</p>
+<P style="font-size:15px ">雙方會為了佔領指定目標而交戰；率先贏得兩回合勝利的團隊贏得比賽。</P>
+<p>搶旗</p>
+<P style="font-size:15px ">兩支六人隊伍必須一面保護己方的旗幟，一面奪取對方的旗幟。</P>
+<p>死鬥</p>
+<P style="font-size:15px ">在自由混戰的8人對戰中，率先比對手擊殺更多敵人。</P>
+<p>鎖定對決</p>
+<P style="font-size:15px ">在1v1﹑3v3或6v6的遊戲中，由殲滅所有敵方的隊伍得勝。</P>
+<P>團隊死鬥</P>
+<P style="font-size:15px ">在4v4對戰中，兩隊比賽看誰率先擊殺更多敵人。</P>
+<P>佔領</P>
+<P style="font-size:15px ">攻擊方展開戰鬥佔領一連串目標；防守方阻止對方，直到時間結束。</P>
+<p>佔領/護送</p>
+<P style="font-size:15px ">攻擊方必須先佔領指定目標將它運送到指定地點；而防守方的目標是攔阻攻擊方。</P>
 <h2 id="地圖">地圖</h2>
+<p>護送</p>
+<P style="font-size:15px ">66號公路、多拉多、捍衛者基地:直布羅陀、垃圾鎮、里亞爾托</P>
+<p>控制</p>
+<P style="font-size:15px ">釜山、灕江天塔、綠洲城、尼泊爾、伊利歐斯</P>
+<p>搶旗</p>
+<P style="font-size:15px ">大城、灕江天塔、綠洲城、尼泊爾、伊利歐斯</P>
+<p>死鬥</p>
+<P style="font-size:15px ">愛西瓦德、多拉多、蓋亞爾城堡、國王大道、好萊塢、佩特拉</P>
+<p>鎖定對決</p>
+<P style="font-size:15px ">城塞、黑森林、墓室、南極洲生態觀測站</P>
+<P>團隊死鬥</P>
+<P style="font-size:15px ">愛西瓦德、城塞、多拉多、國王大道、好萊塢、黑森林、墓室、南極洲生態觀測站、佩特拉</P>
+<P>佔領</P>
+<P style="font-size:15px ">阿努比斯神廟、地平線月球殖民地、伏斯凱雅亞工業、花村</P>
+<p>佔領/護送</p>
+<P style="font-size:15px ">愛西瓦德、暴雪樂園、國王大道、好萊塢、努巴尼</P>
 </div>
 <script>
 function display1(){
@@ -187,7 +222,6 @@ var d = document.getElementById("content6");
 c.style.display = "none";
 if (d.style.display === "none") {d.style.display = "block";} 
 else {d.style.display = "none";}}
-
 </script>
 </div>
 </body>	
